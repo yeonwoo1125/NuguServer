@@ -2,3 +2,13 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/humidityDB?useSSL=false&serverTimezone=Asia/Seoul
+    username: root
+    password: yeanwoo0619
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
